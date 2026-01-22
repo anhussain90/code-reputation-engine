@@ -42,6 +42,6 @@ jobs:
         run: |
           git config user.name "analysis-bot"
           git config user.email "analysis-bot@users.noreply.github.com"
-          git add reports/analysis_report.json
+          git add reports/analysis_report.csv
           git commit -m "Update static analysis report"
           git push
