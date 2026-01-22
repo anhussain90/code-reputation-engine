@@ -15,8 +15,12 @@ def get(url, params=None):
     r.raise_for_status()
     return r.json()
 
-# Get check suites for the run
-suites = get(f"{API}/repos/{REPO}/actions/runs/{RUN_ID}/check-suites")
+# Get workflow run to find head SHA
+run_data = get(f"{API}/repos/{REPO}/actions/runs/{RUN_ID}")
+head_sha = run_data["head_sha"]
+
+# Get check suites for the commit
+suites = get(f"{API}/repos/{REPO}/commits/{head_sha}/check-suites")
 
 rows = []
 
