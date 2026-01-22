@@ -1,19 +1,19 @@
 # Code Reputation Engine
 
-Automated collection of static code analysis feedback from GitHub Actions into structured CSV reports.  
+Automated collection of static code analysis feedback from GitHub Actions into structured CSV reports. 
 This repository powers a reputation and quality scoring system by aggregating findings from CodeQL, linters, and other static analysis tools.
 
 ---
 
 ## 🎯 Purpose
 
-Modern development teams run multiple static analysis tools in GitHub Actions.  
+Modern development teams run multiple static analysis tools in GitHub Actions. 
 This project provides a **standardized, automated way** to collect those results and store them as machine-readable reports for:
 
-- Code quality dashboards  
-- Developer reputation scoring  
-- Security posture tracking  
-- Trend analysis over time  
+- Code quality dashboards 
+- Developer reputation scoring 
+- Security posture tracking 
+- Trend analysis over time 
 
 ---
 
