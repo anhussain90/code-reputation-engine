@@ -1,4 +1,6 @@
-import os, requests, csv
+import os
+import csv
+import requests
 
 TOKEN = os.environ["GITHUB_TOKEN"]
 REPO = os.environ["REPO"]
